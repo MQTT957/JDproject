@@ -1,0 +1,148 @@
+/*大体设置*/
+body {
+    background-color: #F0F3EF;
+	font-family: "microsoft yahei"
+}
+body,li,ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #999999;
+    display: inline-block;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.f10 {
+    color: #f10215!important;
+}
+.f1{
+    font-weight: 700;
+    color: #e1251b!important;
+}
+.w {
+    width: 1190px;
+	margin: 0 auto;
+}
+/* 上边栏 */
+.header {
+    height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #cccccc;
+    font-size: 12px;
+    color: #999999;
+}
+.city {
+    line-height: 30px;
+    margin-left: 20px;
+}
+.header a {
+    line-height: 30px;
+}
+.header a:hover {
+    color: #e33333;
+}
+.header ul li {
+    float: left;
+}
+.space {
+    width: 1px;
+    height: 10px;
+    background-color: #cccccc;
+    margin: 11px 12px 0;
+}
+/*再下一点的搜索栏*/
+.middle {
+    height: 140px;
+    position: relative;
+}
+.logo h1 a {
+    display: block;
+    width: 190px;
+    height: 140px;
+    background: url(jd.png) no-repeat;
+    position: absolute;
+    left: 1px;
+    top: 10px;
+}
+form {
+    width: 550px;
+    height: 35px;
+    position: absolute;
+    left: 322px;
+    top: 25px;
+    display: flex;
+    position: relative;
+}
+form input {
+    border: 2px solid #e2231a;
+    width: 94%;
+    padding-left: 6px;
+    font-size: 14px;
+    color: #333;
+}
+form .search {
+    width: 12%;
+    background-color: #e2231a;
+    color: #ffffff;
+    border: none;
+}
+form .ph {
+	border: none;
+    position: absolute;
+    right: 70px;
+    top: 5px;
+    width: 35px;
+}
+.shopcar a {
+    width: 130px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    position: absolute;
+    right: 100px;
+    left: 890px;
+    top: 25px;
+    border: 1px solid #ccc;
+	background: url(shopping.png) no-repeat;
+    font-size: 12px;
+    color: #f10214;
+}
+
+.hotwords {
+    position: absolute;
+    left: 320px;
+    top: 65px;
+}
+.hotwords a {
+    margin: 0 2px;
+    font-size: 12px;
+}
+.navitems {
+    position: absolute;
+	bottom: 0;
+    left: 225px;
+    padding-bottom: 10px;
+}
+.navitems li {
+    float: left;
+    margin-right: 24px;
+}
+.navitems li a {
+    font-size: 14px;
+    color: #333;
+}
+.navitems li a:hover {
+    color: #e33333;
+}
+.nav{
+	background: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    margin-top: -21px;
+}
