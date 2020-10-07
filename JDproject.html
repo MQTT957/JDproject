@@ -7,8 +7,66 @@
 		<link rel="icon" href="https://www.jd.com/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="JD.css" />
 		<title>狗东-正品低价、品质保障、配送及时、轻松购物！</title>
+		<script>
+			<!--tab栏切换-->
+			window.onload = function (){
+			        var liArr = document.getElementsByClassName("wtf");
+			        var spanArr = document.getElementsByClassName("wtff");
+			
+			        for(var i=0;i<liArr.length;i++){
+			            liArr[i].index = i;
+			            liArr[i].onmouseover = function () {
+			                for(var j=0;j<liArr.length;j++){
+			                    liArr[j].className = "";
+			                    spanArr[j].className = "hidde wtff";
+			                }
+			                this.className = "current";
+			                spanArr[this.index].className = "show wtff"; 
+			            }
+			        }
+					for(var i=0;i<liArr.length;i++){
+						liArr[i].index=i;
+						liArr[i].onmouseout=function(){
+							this.className="";
+							spanArr[this.index].className="hidde wtff";
+						}
+					}
+			    }
+			<!--二维码显示-->
+			function enter(){
+				var codeh=document.getElementsByClassName("wtfff");
+				codeh[0].setAttribute("class","showw wtfff");
+			}
+			function leave(){
+				var codeh=document.getElementsByClassName("wtfff");
+				codeh[0].setAttribute("class","hidde wtfff")
+			}
+			<!--倒计时-->
+			function countTime(){
+				var nowDate=new Date();
+				var now=nowDate.getTime();
+				var endDate=new Date('2020/10/8 23:59:59');
+				var end=endDate.getTime()
+				var diffTime=end-now;
+				var hour,minute,second;
+				if(diffTime>=0){
+					hour=Math.floor(diffTime/1000/60/60%24);
+					minute=Math.floor(diffTime/1000/60%60);
+					second=Math.floor(diffTime/1000%60);
+					document.getElementById("hh").innerHTML=hour;
+					document.getElementById("mm").innerHTML=minute;
+					document.getElementById("ss").innerHTML=second;
+					setTimeout(countTime,200)
+					}
+				else{
+					clearTimeout(countTime)
+					alert("秒杀时间到！")
+				}
+			}
+			</script>
+		</script>
 	</head>
-	<body>
+	<body onload="countTime()">
 		<!--头部-->
 		<div class="header">
 			<div class="w">
@@ -16,7 +74,7 @@
 				<ul class="fl city">
 					<li><img src="weizhi.png">湖北</li>
 				</ul>
-				<ul class="fr ">
+				<ul class="fr spe">
 					<li>
 						<a href="#">你好，请登录</a>
 						<a href="#" class="f10">免费注册</a>
@@ -46,9 +104,12 @@
 						<a href="#">网站导航<img src="xia.jpg" /></a>
 					</li>
 					<li class="space"></li>
-					<li>
+					<li class="spee" onmouseover="enter()" onmouseleave="leave()">
 						<a href="#">手机京东</a>
 					</li>
+					<div class="hidde wtfff">
+						<img src="code.jpg"><div class="wwoor"><b>手机京东</b><br>新人专享大礼包</div>
+					</div>
 				</ul>
 			</div>
 		</div>
@@ -120,97 +181,115 @@
 			<div class="grid">
 				<div class="grid-col1 fl ">
 					<ul>
-						<li>
+						<li class="wtf">
 							<a href="# ">家用电器</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">手机</a>/
 							<a href="# ">运用商</a>/
 							<a href="# ">数码</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">电脑</a>/
 							<a href="# ">办公</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">家具</a>/
 							<a href="# ">家居</a>/
 							<a href="# ">家装</a>/
 							<a href="# ">厨具</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">男装</a>/
 							<a href="# ">女装</a>/
 							<a href="# ">童装</a>/
 							<a href="# ">内衣</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">美妆</a>/
 							<a href="# ">个护清洁</a>/
 							<a href="# ">宠物</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">女鞋</a>/
 							<a href="# ">箱包</a>/
 							<a href="# ">钟表</a>/
 							<a href="# ">珠宝</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">男鞋</a>/
 							<a href="# ">运动</a>/
 							<a href="# ">户外</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">房产</a>/
 							<a href="# ">汽车</a>/
 							<a href="# ">汽车用品</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">母婴</a>/
 							<a href="# ">玩具乐器</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">食品</a>/
 							<a href="# ">酒类</a>/
 							<a href="# ">生鲜</a>/
 							<a href="# ">特产</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">艺术</a>/
 							<a href="# ">礼品鲜花</a>/
 							<a href="# ">农资绿植</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">医药保健</a>/
 							<a href="# ">计生情趣</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">图书</a>/
 							<a href="# ">文娱</a>/
 							<a href="# ">教育</a>/
 							<a href="# ">电子书</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">机票</a>/
 							<a href="# ">酒店</a>/
 							<a href="# ">旅游</a>/
 							<a href="# ">生活</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">理财</a>/
 							<a href="# ">众筹</a>/
 							<a href="# ">白条</a>/
 							<a href="# ">保险</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">安装</a>/
 							<a href="# ">维修</a>/
 							<a href="# ">清洗</a>/
 							<a href="# ">二手</a>
 						</li>
-						<li>
+						<li class="wtf">
 							<a href="# ">工业品</a>
 						</li>
+						<span class="hidde wtff">这是家用电器板块</span>
+						<span class="hidde wtff">这是手机板块</span>
+						<span class="hidde wtff">这是电脑板块</span>
+						<span class="hidde wtff">这是家具板块</span>
+						<span class="hidde wtff">这是服装板块</span>
+						<span class="hidde wtff">这是美妆板块</span>
+						<span class="hidde wtff">这是女鞋板块</span>
+						<span class="hidde wtff">这是男鞋板块</span>
+						<span class="hidde wtff">这是房产板块</span>
+						<span class="hidde wtff">这是母婴板块</span>
+						<span class="hidde wtff">这是食品板块</span>
+						<span class="hidde wtff">这是艺术板块</span>
+						<span class="hidde wtff">这是医药保健板块</span>
+						<span class="hidde wtff">这是图书板块</span>
+						<span class="hidde wtff">这是机票板块</span>
+						<span class="hidde wtff">这是理财板块</span>
+						<span class="hidde wtff">这是安装板块</span>
+						<span class="hidde wtff">这是工业品板块</span>
 					</ul>
 				</div>
 				<!--主体中间-->
@@ -293,11 +372,11 @@
 						<div class="timego_m"><b>京东秒杀</b></div>
 						<div class="timego_E">FLASH DEALS</div>
 						<div class="imgxuebi"></div>
-						<div class="timego_txt">08:00场 倒计时</div>
+						<div class="timego_txt">12:00场 倒计时</div>
 						<div class="times">
-							<div><span class="timesnumber">00</span><span class="line_h"></span></div>
-							<div><span class="timesnumber">00</span><span class="line_h"></span></div>
-							<div><span class="timesnumber">00</span><span class="line_h"></span></div>
+							<div><span class="timesnumber" id="hh">00</span><span class="line_h"></span></div>
+							<div><span class="timesnumber" id="mm">00</span><span class="line_h"></span></div>
+							<div><span class="timesnumber" id="ss">00</span><span class="line_h"></span></div>
 						</div>
 				</div>
 				<div class="data_image1">

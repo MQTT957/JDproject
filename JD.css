@@ -30,6 +30,51 @@ a {
     width: 1190px;
 	margin: 0 auto;
 }
+.hidde{
+	display: none;
+}
+.show{
+	display:block;
+	width: 800px;
+	height: 480px;
+	border: 1px solid #808080;
+	background-color: white;
+	font: 600 100px/160px "microsoft yahei";
+	position: absolute;
+	left: 190px;
+	top: 0;
+}
+.current{
+	background-color: #e3e4e5;
+}
+.spe{
+	position: relative;
+}
+.showw{
+	display: block;
+	height: 101px;
+	width: 190px;
+	background-color: white;
+	position: absolute;
+	top: 30px;
+	right: 0;
+	margin-right: -30px;
+	border: 1px solid #999999;
+}
+.wtfff img{
+	height: 80px;
+	width: 80px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 1px dashed #666666;
+}
+.wwoor{
+	float: right;
+	margin-top: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	color: red;
+}
 /*上边栏*/
 .header {
     height: 30px;
@@ -166,6 +211,7 @@ form .ph {
     height: 100%;
     background-color: #fefefe;
     font-size:  14px;
+	position: relative;
 }
 .grid-col1 a {
     color: #626262;
@@ -188,12 +234,12 @@ form .ph {
     width: 790px;
     height: 100%;
     margin-left: 10px;
+	overflow: hidden;
 }
-/*denglu部分*/
 .grid-col2-t img {
     float: left;
 }
-
+/*denglu部分*/
 .login {
     height: 85px;
     border-bottom: 1px solid #ccc;
