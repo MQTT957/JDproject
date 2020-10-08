@@ -9,7 +9,7 @@
 		<title>狗东-正品低价、品质保障、配送及时、轻松购物！</title>
 		<script>
 			<!--tab栏切换-->
-			window.onload = function (){
+			function changee(){
 			        var liArr = document.getElementsByClassName("wtf");
 			        var spanArr = document.getElementsByClassName("wtff");
 			
@@ -45,7 +45,7 @@
 			function countTime(){
 				var nowDate=new Date();
 				var now=nowDate.getTime();
-				var endDate=new Date('2020/10/8 23:59:59');
+				var endDate=new Date('2020/10/9 15:59:59');
 				var end=endDate.getTime()
 				var diffTime=end-now;
 				var hour,minute,second;
@@ -66,7 +66,7 @@
 			</script>
 		</script>
 	</head>
-	<body onload="countTime()">
+	<body onload="changee();countTime();">
 		<!--头部-->
 		<div class="header">
 			<div class="w">
@@ -366,70 +366,70 @@
 		</div>
 		<!--京东秒杀-->
 		<div class="miaosha">
-			<div class="m_con">
+			<div class="mcon w">
 				<div class="timego">
 					<a href="#">
-						<div class="timego_m"><b>京东秒杀</b></div>
-						<div class="timego_E">FLASH DEALS</div>
+						<div class="timegom"><b>京东秒杀</b></div>
+						<div class="timegoE">FLASH DEALS</div>
 						<div class="imgxuebi"></div>
-						<div class="timego_txt">12:00场 倒计时</div>
+						<div class="timegotxt">12:00场 倒计时</div>
 						<div class="times">
-							<div><span class="timesnumber" id="hh">00</span><span class="line_h"></span></div>
-							<div><span class="timesnumber" id="mm">00</span><span class="line_h"></span></div>
-							<div><span class="timesnumber" id="ss">00</span><span class="line_h"></span></div>
+							<div><span class="timesnumber" id="hh">00</span><span class="lineh"></span></div>
+							<div><span class="timesnumber" id="mm">00</span><span class="lineh"></span></div>
+							<div><span class="timesnumber" id="ss">00</span><span class="lineh"></span></div>
 						</div>
 				</div>
-				<div class="data_image1">
-					<span class="data_image1_left">
-						<</span> <span class="data_image1_right">>
+				<div class="dataimage1">
+					<span class="dataimage1left">
+						<</span> <span class="dataimage1right">>
 					</span>
 
-					<div class="data_image1content">
+					<div class="dataimage1content">
 						<div>
 							<div class="imagepar">
 								<img src="one.png" />
 							</div>
-							<p class="imagepar_txt">臣源增压泵家用自吸泵智能</p>
-							<div class="imagepar_price">
-								<span class="imagepar_price_nowprice">￥260.00</span>
-								<span class="imagepar_price_oldprice"><del>￥328.00</del></span>
+							<p class="imagepartxt">臣源增压泵家用自吸泵智能</p>
+							<div class="imageparprice">
+								<span class="imageparpricenowprice">￥260.00</span>
+								<span class="imageparpriceoldprice"><del>￥328.00</del></span>
 							</div>
 						</div>
 						<div>
 							<div class="imagepar">
 								<img src="two.png" />
 							</div>
-							<p class="imagepar_txt">鳄鱼恤 CROCODILE 卫衣男</p>
+							<p class="imagepartxt">鳄鱼恤 CROCODILE 卫衣男</p>
 
-							<div class="imagepar_price">
-								<span class="imagepar_price_nowprice">￥59.00</span>
-								<span class="imagepar_price_oldprice"><del>￥89.00</del></span>
+							<div class="imageparprice">
+								<span class="imageparpricenowprice">￥59.00</span>
+								<span class="imageparpriceoldprice"><del>￥89.00</del></span>
 							</div>
 						</div>
 						<div>
 							<div class="imagepar">
 								<img src="three.png" />
 							</div>
-							<p class="imagepar_txt">【品牌授权】Emporio</p>
-							<div class="imagepar_price">
-								<span class="imagepar_price_nowprice">￥1190.00</span>
-								<span class="imagepar_price_oldprice"><del>￥2590.00</del></span>
+							<p class="imagepartxt">【品牌授权】Emporio</p>
+							<div class="imageparprice">
+								<span class="imageparpricenowprice">￥1190.00</span>
+								<span class="imageparpriceoldprice"><del>￥2590.00</del></span>
 							</div>
 						</div>
 						<div>
 							<div class="imagepar">
 								<img src="four.png" />
 							</div>
-							<p class="imagepar_txt">梦多福 保温饭盒 学生</p>
-							<div class="imagepar_price">
-								<span class="imagepar_price_nowprice">￥149.00</span>
-								<span class="imagepar_price_oldprice"><del>￥338.00</del></span>
+							<p class="imagepartxt">梦多福 保温饭盒 学生</p>
+							<div class="imageparprice">
+								<span class="imageparpricenowprice">￥149.00</span>
+								<span class="imageparpriceoldprice"><del>￥338.00</del></span>
 							</div>
 						</div>
 					</div></a>
 				</div>
-				<div class="data_image2">
-					<div class="data_image2_ban">
+				<div class="dataimage2">
+					<div class="dataimage2ban">
 						<img src="https://img12.360buyimg.com/seckillcms/s260x260_jfs/t1/116065/25/10452/138403/5eec7a39E560a6c08/d33fba03a7106913.jpg.webp"
 						 alt="" />
 						<div class="diandian">
@@ -656,24 +656,21 @@
 				</div>
 			</div>
 		</div>
+		<!--底部-->
 		<footer>
 			<div class="service">
 				<div class="w">
 					<ul>
 						<li>
-							<h5></h5>
 							<p>品类齐全，轻松购物</p>
 						</li>
 						<li>
-							<h5></h5>
 							<p>多仓直发，急速配送</p>
 						</li>
 						<li>
-							<h5></h5>
 							<p>正品行货，精致服务</p>
 						</li>
 						<li>
-							<h5></h5>
 							<p>天天低价，畅选无忧</p>
 						</li>
 					</ul>
@@ -806,7 +803,7 @@
 						<div class="contentP">
 							<p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
 							<p>
-								<a href="#">查看详情<i></i></a>
+								<a href="#">查看详情</a>
 							</p>
 						</div>
 					</div>

@@ -43,6 +43,7 @@ a {
 	position: absolute;
 	left: 190px;
 	top: 0;
+	z-index: 3;
 }
 .current{
 	background-color: #e3e4e5;
@@ -60,6 +61,7 @@ a {
 	right: 0;
 	margin-right: -30px;
 	border: 1px solid #999999;
+	z-index: 3;
 }
 .wtfff img{
 	height: 80px;
@@ -137,6 +139,7 @@ form .search {
     background-color: #e2231a;
     color: #ffffff;
     border: none;
+	cursor: pointer;
 }
 form .ph {
 	border: none;
@@ -190,6 +193,7 @@ form .ph {
     border-bottom: 1px solid #dddddd;
     margin-top: -21px;
 }
+/*主体左部分*/
 .grid-p{
     background:url("bj.png") no-repeat center center;
 }
@@ -230,6 +234,7 @@ form .ph {
     height: 25px;
     line-height:  12px;
 }
+/*轮播图部分*/
 .grid-col2 {
     width: 790px;
     height: 100%;
@@ -239,7 +244,7 @@ form .ph {
 .grid-col2-t img {
     float: left;
 }
-/*denglu部分*/
+/*登陆部分*/
 .login {
     height: 85px;
     border-bottom: 1px solid #ccc;
@@ -309,9 +314,6 @@ form .ph {
 
     border-right: 1px solid #ccc;
 }
-.gg {
-    margin-left: 15px;
-}
 .news-t .more {
     float: right;
 }
@@ -365,8 +367,8 @@ form .ph {
 .smallico .ico1 a:hover{
 	color: #f10215;
 }
-.m_con{
-    width: 1190px;
+/*秒杀部分*/
+.mcon{
     height:275px;
     margin: 20px auto;
 }
@@ -378,29 +380,29 @@ form .ph {
     background-color: #E83632;
     text-align: center;
 }
-.data_image1{
+.dataimage1{
     position: relative;
     float: left;
     width: 800px;
     height: 275px;
     background-color: white;
 }
-.data_image2{
+.dataimage2{
     float: left;
     width: 200px;
     height: 275px;
     background-color: white;
 }
-.timego_m{
+.timegom{
     margin-top: 45px;
     color: white;
     font-size: 33px;
 }
-.timego_E{
+.timegoE{
     color: rgba(255, 255, 255, 0.69);
     font-size: 20px;
 }
-.timego_txt{
+.timegotxt{
     color: white;
 }
 .times{
@@ -416,7 +418,7 @@ form .ph {
     margin-right: 5px;
     background: #2f2f2f;
 }
-.line_h{
+.lineh{
     position: relative;
     top: 4px;
     display: inline-block;
@@ -433,11 +435,11 @@ form .ph {
     color: white;
     z-index: 1;
 }
-.data_image1content{
+.dataimage1content{
     width: 800px;
     height: 275px;
 }
-.data_image1content>div{
+.dataimage1content>div{
     border-right: 1px solid #dadada;
     height: 275px;
     width: 199px;
@@ -454,18 +456,18 @@ form .ph {
     width: 100%;
     height: 100%;
 }
-.imagepar_txt{
+.imagepartxt{
     text-align: center;
     font-size: 12px;
     color: #4f4f4f;
 }
-.data_image1content div:hover .imagepar_txt{
+.dataimage1content div:hover .imagepartxt{
     color: #fb5f4d;
 }
-.imagepar_txt:hover{
+.imagepartxt:hover{
     color: #fb5f4d;
 }
-.imagepar_price_nowprice{
+.imageparpricenowprice{
     background-color: #ff475b;
     color: white;
     display: inline-block;
@@ -478,7 +480,7 @@ form .ph {
     float: left;
     border: 1px solid #ff475b;
 }
-.imagepar_price_oldprice{
+.imageparpriceoldprice{
     float: left;
     border: 1px solid #ff475b;
     color: silver;
@@ -490,11 +492,11 @@ form .ph {
     text-align: center;
     font-size: 12px;
 }
-.imagepar_price{
+.imageparprice{
     width: 164px;
     margin: 15px auto;
 }
-.data_image1_left{
+.dataimage1left{
     position: absolute;
     text-align: center;
     line-height: 40px;
@@ -505,7 +507,7 @@ form .ph {
     left: 0;
     top: 110px;
 }
-.data_image1_right{
+.dataimage1right{
     position: absolute;
     text-align: center;
     line-height: 40px;
@@ -516,16 +518,16 @@ form .ph {
     color: white;
     top: 110px;
 }
-.data_image1_right:hover,.data_image1_left:hover{
+.dataimage1right:hover,.dataimage1left:hover{
     background-color: grey;
 }
-.data_image2_ban{
+.dataimage2ban{
     position: relative;
     margin: 10px 10px;
     width: 180px;
     height: 255px;
 }
-.data_image2_ban img{
+.dataimage2ban img{
     width: 100%;
     height: 70%;
 }
@@ -542,6 +544,7 @@ form .ph {
     border-radius: 50%;
     background-color: grey;
 }
+/*为你推荐*/
 .shoprec{
 	overflow: hidden;
 }
@@ -581,7 +584,7 @@ form .ph {
 	top: 230px;
 	font-size: 20px;
 }
-/*di*/
+/*底部*/
 footer {
     margin-top: 35px;
 }
